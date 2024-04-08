@@ -1,0 +1,68 @@
+:root {
+  --border_check1: 1px solid black;
+  --border_check2: 1px solid red;
+  --pad_check: 20px;
+  --def_font: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* border-bottom: 1px solid black;
+    border-top: 1px solid black; */
+    flex-wrap: wrap;
+}
+
+nav ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    box-sizing: border-box;
+    margin: unset;
+    padding: 10px;
+}
+
+nav ul:hover{
+    /* background: rgb(205, 184, 184); */
+    color: rgb(93, 149, 149);
+    font-weight: bolder;
+}
+
+.hero_section{
+    height: 90dvh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    background: rgb(193,251,255);
+    background: linear-gradient(0deg, rgba(193,251,255,1) 0%, rgba(213,219,219,1) 52%, rgba(177,230,234,1) 100%);
+}
+
+.hero_section :nth-child(0){
+    padding:0 30px 0 0;
+}
+
+.hero_card {
+    /* border: var(--border_check1); */
+    padding: 130px;
+    width: 35%;
+    font-family: var(--def_font);
+}
+
+.hero_card h1{
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.hero_card p {
+    font-size: 30px;
+}
+
+.hero_img {
+    /* border: var(--border_check2); */
+    padding: var(--pad_check);
+    width: fit-content;
+}
+
+.hero_img img{
+    width: 45dvw;
+    height: 80dvh;
+}
