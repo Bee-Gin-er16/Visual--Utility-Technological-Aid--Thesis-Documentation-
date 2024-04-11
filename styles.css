@@ -3,13 +3,19 @@
   --border_check2: 1px solid red;
   --pad_check: 20px;
   --def_font: Arial, Helvetica, sans-serif;
+  --bg_def: rgb(193,251,255);
+  --bg_def_linear: linear-gradient(0deg, rgba(193,251,255,1) 0%, rgba(213,219,219,1) 52%, rgba(177,230,234,1) 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 nav {
     display: flex;
+    padding: 2dvh;
     justify-content: space-around;
-    /* border-bottom: 1px solid black;
-    border-top: 1px solid black; */
     flex-wrap: wrap;
 }
 
@@ -31,13 +37,12 @@ nav ul:hover{
     height: 90dvh;
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     background: rgb(193,251,255);
     background: linear-gradient(0deg, rgba(193,251,255,1) 0%, rgba(213,219,219,1) 52%, rgba(177,230,234,1) 100%);
 }
 
 .hero_section :nth-child(0){
-    padding:0 30px 0 0;
+    padding:0 0 0 0;
 }
 
 .hero_card {
@@ -50,24 +55,37 @@ nav ul:hover{
 .hero_card h1{
     font-weight: bolder;
     font-size: xxx-large;
+    margin-bottom: 0;
+}
+
+.hero_card h2{
+    margin-top: 0;
 }
 
 .hero_card p {
+    margin-top: 50px;
     font-size: 30px;
+    word-spacing: 12px;
 }
 
 .hero_img {
-    /* border: var(--border_check2); */
-    padding: var(--pad_check);
-    width: fit-content;
+    max-width: 100%;
+    object-fit: cover;
     filter: drop-shadow(60px 4px 4px rgba(0,0,0,0.5)) 
     /* drop-shadow(-40px 0px 4px rgba(0,0,0,0.25)); */
     /* -webkit-filter: drop-shadow(5px 5px 5px #666666);
         filter: drop-shadow(5px 5px 5px #666666); */
-        
 }
 
 .hero_img img{
     width: 45dvw;
     height: 80dvh;
+}
+
+.blender_section , .objectives_section, .testimony_section , .researchers_section{
+    height: 90dvh;
+    width: 100%;
+    display: flex;
+    background: var(--bg_def);
+    background: var(--bg_def_linear);
 }
