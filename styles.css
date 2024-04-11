@@ -60,6 +60,11 @@ nav ul:hover{
     /* border: var(--border_check2); */
     padding: var(--pad_check);
     width: fit-content;
+    filter: drop-shadow(60px 4px 4px rgba(0,0,0,0.5)) 
+    /* drop-shadow(-40px 0px 4px rgba(0,0,0,0.25)); */
+    /* -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666); */
+        
 }
 
 .hero_img img{
