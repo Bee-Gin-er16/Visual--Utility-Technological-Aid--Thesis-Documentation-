@@ -143,7 +143,7 @@ nav ul:hover{
 
 /*Researchers Section */
 .researchers_section {
-    border: var(--border_check1);
+    /* border: var(--border_check1); */
     flex-direction: column;
 }
 
@@ -151,8 +151,26 @@ nav ul:hover{
     text-align: center;
 }
 
-
 .researcher_cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+/* .researcher_card {
+    border: var(--border_check1);
+    
+} */
+
+.researcher_card img{
+    width: 20dvw;
+    height: 60dvh;
+    border-radius: 35px;
+    filter: drop-shadow(-0px 20px 10px rgba(0,0,0,0.5));
+}
+
+.img_description {
+    padding: 3dvh 0 0 0;
+    text-align: center;
+    font-size: larger;
 }
