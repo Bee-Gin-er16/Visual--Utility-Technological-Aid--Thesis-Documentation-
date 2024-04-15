@@ -104,9 +104,9 @@ nav ul:hover{
     /* border: var(--border_check2); */
 }
 
-.testimony_children {
+/* .testimony_children {
     display: block;
-}
+} */
 
 .testimony_child_top, .testimony_child_bottom {
     /* border: var(--border_check1); */
@@ -139,4 +139,20 @@ nav ul:hover{
     border-bottom-left-radius: 57px;
     box-shadow: -29px;
     filter: drop-shadow(-29px 4px 4px rgba(0,0,0,0.2));
+}
+
+/*Researchers Section */
+.researchers_section {
+    border: var(--border_check1);
+    flex-direction: column;
+}
+
+.researchers_section h1{
+    text-align: center;
+}
+
+
+.researcher_cards {
+    display: flex;
+    justify-content: space-evenly;
 }
