@@ -15,22 +15,21 @@ body {
 }
 
 nav {
-    display: flex;
+    /* display: flex; */
     padding: 2dvh;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 nav ul{
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
-    box-sizing: border-box;
+    display: flex;
     margin: unset;
-    padding: 5dh;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-nav ul:hover{
-    /* background: rgb(205, 184, 184); */
+nav ul li:hover{
     color: rgb(93, 149, 149);
     font-weight: bolder;
 }
@@ -84,7 +83,7 @@ nav ul:hover{
     height: 80dvh;
 }
 
-.blender_section , .objectives_section, .testimony_section , .researchers_section{
+.blender_section , .objectives_section, .testimony_section, .researchers_section{
     height: 90dvh;
     width: 100%;
     display: flex;
@@ -92,9 +91,31 @@ nav ul:hover{
     background: var(--bg_def_linear);
 }
 
+.section_title {
+    text-align: center;
+}
+
+/*Objectives Section*/
+.objectives_section {
+    flex-direction: column;
+}
+
+.objectives_content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 5dvw;
+    width: 500px; /*Doing this makes the paragraph more readable*/
+}
+
+.objectives_content li{
+    /* overflow: hidden; */
+    font-size: larger;
+    margin-bottom: 5dvh;
+}
+
 /*Testimony Section */
 .testimony_section {
-    display: flex;
     height: fit-content
 }
 
@@ -143,12 +164,7 @@ nav ul:hover{
 
 /*Researchers Section */
 .researchers_section {
-    /* border: var(--border_check1); */
     flex-direction: column;
-}
-
-.researchers_section h1{
-    text-align: center;
 }
 
 .researcher_cards {
