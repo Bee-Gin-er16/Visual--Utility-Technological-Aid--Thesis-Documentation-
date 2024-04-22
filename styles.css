@@ -38,9 +38,9 @@ nav ul li:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* padding-bottom: 20dvh; */
-    background: var(--bg_def);
-    background: var(--bg_def_linear);
+    padding: 10dvh 0;
+    background: rgb(39, 45, 46);
+    background: linear-gradient(0deg, rgb(39, 45, 46) 0%, rgba(213,219,219,1) 52%, rgb(48, 63, 64) 100%);
     justify-content: space-evenly;
 }
 
@@ -64,7 +64,7 @@ nav ul li:hover{
 
 .hero_card p {
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 23px;
     text-indent: 50px;
     /* word-spacing: 12px; */
 }
@@ -88,6 +88,7 @@ nav ul li:hover{
 .blender_section , .objectives_section, .documentation_section {
     height: fit-content;
     width: 100%;
+    padding: 5dvh 0;
     display: flex;
     background: var(--bg_def);
     background: var(--bg_def_linear);
