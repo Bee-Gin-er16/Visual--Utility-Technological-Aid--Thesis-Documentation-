@@ -38,16 +38,16 @@ nav ul li:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 10dvh 0;
+    padding: 5dvh 0;
     background: rgb(39, 45, 46);
-    background: linear-gradient(0deg, rgb(39, 45, 46) 0%, rgba(213,219,219,1) 52%, rgb(48, 63, 64) 100%);
+    background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 52%, rgb(48, 63, 64) 100%);
     justify-content: space-evenly;
 }
 
 .hero_card {
     /* border: var(--border_check1); */
     height: fit-content;
-    margin-top: 5dvh;
+    /* margin-top: 5dvh; */
     max-width: 40%;
     flex-wrap: wrap;
 }
@@ -81,7 +81,7 @@ nav ul li:hover{
 
 .hero_img img{
     width: 45dvw;
-    height: 600px;
+    height: 700px;
     /* height: 80dvh; */
 }
 
@@ -101,6 +101,8 @@ nav ul li:hover{
 /*Objectives Section*/
 .objectives_section {
     flex-direction: column; /*The hierarchy is title nxt_line the content*/
+    background: rgb(39, 45, 46);
+    background: linear-gradient(0deg, rgb(39, 45, 46) 0%, rgba(213,219,219,1) 52%, rgba(213,219,219,1));
 }
 
 .objectives_content{
