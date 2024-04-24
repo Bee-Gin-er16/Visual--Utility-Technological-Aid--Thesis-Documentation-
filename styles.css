@@ -39,8 +39,10 @@ nav ul li:hover{
     display: flex;
     flex-wrap: wrap;
     padding: 5dvh 0;
-    background: rgb(39, 45, 46);
-    background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 52%, rgb(48, 63, 64) 100%);
+    /* background: rgb(39, 45, 46);
+    background: linear-gradient(0deg, rgb(81, 95, 96) 0%, rgba(213,219,219,1) 52%, rgb(81, 95, 96) 100%); */
+    background: rgb(81,95,96);
+    background: linear-gradient(30deg, rgba(81,95,96,1) 0%, rgba(213,219,219,1) 50%, rgba(81,95,96,1) 100%);
     justify-content: space-evenly;
 }
 
@@ -101,8 +103,9 @@ nav ul li:hover{
 /*Objectives Section*/
 .objectives_section {
     flex-direction: column; /*The hierarchy is title nxt_line the content*/
-    background: rgb(39, 45, 46);
-    background: linear-gradient(0deg, rgb(39, 45, 46) 0%, rgba(213,219,219,1) 52%, rgba(213,219,219,1));
+    background: rgb(215, 235, 239);
+    /* background: rgb(39, 45, 46);
+    background: linear-gradient(0deg, rgb(23, 31, 32) 0%, rgba(213,219,219,1) 30%, rgb(115, 124, 125)); */
 }
 
 .objectives_content{
@@ -124,6 +127,23 @@ nav ul li:hover{
     font-size: larger;
     text-indent: 50px;
     margin-bottom: 5dvh;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 {
+     grid-area: 1 / 1 / 2 / 4; 
+}
+
+.div1 img{
+    width: 100px;
+    height: 100px;
 }
 
 /*Documentation Section*/
@@ -258,3 +278,4 @@ nav ul li:hover{
 .rs_name {
     text-transform: uppercase;
 }
+
