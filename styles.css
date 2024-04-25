@@ -84,7 +84,13 @@ nav ul li:hover{
 .hero_img img{
     width: 45dvw;
     height: 700px;
+    
     /* height: 80dvh; */
+}
+
+.hero_bg{
+    background: rgb(84, 77, 77);
+    background: radial-gradient(circle, rgb(21, 72, 109) 0%, rgba(229,231,239,0) 60%, rgba(255,255,255,0) 100%);
 }
 
 .blender_section , .objectives_section, .documentation_section {
@@ -122,9 +128,9 @@ nav ul li:hover{
     width: 40%;
 }
 
-.objectives_content li, .objectives_content_right p{
+.objectives_content li, .objectives_content_right p, .objectives_content_left p{
     /* overflow: hidden; */
-    font-size: larger;
+    font-size: 1.4vw;
     text-indent: 50px;
     margin-bottom: 5dvh;
 }
