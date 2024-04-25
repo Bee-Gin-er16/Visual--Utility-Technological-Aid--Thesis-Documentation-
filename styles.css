@@ -162,6 +162,29 @@ nav ul li:hover{
     padding-bottom: 5dvh;
 }
 
+.build {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5dvh 0;
+}
+
+.build_left {
+    width: 40%;
+}
+
+.build_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* padding: 10px; */
+    /* background-color: rgba(117, 12, 47, 0.992); */
+    border-radius: 20px;
+}
+
+
 .documentation_section .subtitle{
     margin-top: 0;
 }
@@ -175,10 +198,8 @@ nav ul li:hover{
 
 .doc_img_card {
     height: 40dvh;
-    width: 20dvw;
+    width: 22dvw;
     border-radius: 20px;
-    margin: 0 10px;
-    /* border: 2px solid rgb(190, 171, 78); */
     object-fit: fill;
 }
 
