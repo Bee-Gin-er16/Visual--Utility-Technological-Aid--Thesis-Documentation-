@@ -173,6 +173,12 @@ nav ul li:hover{
     width: 40%;
 }
 
+.build_left p{
+    font-size: 1.4vw;
+    text-align: left;
+    padding: 3dvh 0 0 2dvw ;
+}
+
 .build_right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
