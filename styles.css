@@ -67,7 +67,7 @@ nav ul li:hover{
 .hero_card p {
     margin-top: 5%;
     font-size: 25px;
-    text-indent: 50px;
+    text-align: left;
     /* word-spacing: 12px; */
 }
 
@@ -93,7 +93,7 @@ nav ul li:hover{
     background: radial-gradient(circle, rgb(21, 72, 109) 0%, rgba(229,231,239,0) 60%, rgba(255,255,255,0) 100%);
 }
 
-.blender_section , .objectives_section, .documentation_section {
+.objectives_section, .documentation_section{
     height: fit-content;
     width: 100%;
     padding: 5dvh 0;
@@ -118,7 +118,7 @@ nav ul li:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 10dvh;
+    padding-bottom: 5dvh;
     width: 100%; /*Doing this makes the paragraph more readable*/
 }
 
@@ -136,20 +136,55 @@ nav ul li:hover{
 }
 
 .icons {
+    padding: 10dvh 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-column-gap: 2dvw;
     grid-row-gap: 0px;
 }
-    
-.div1 {
-     grid-area: 1 / 1 / 2 / 4; 
+
+.icons img{
+    width: 14dvw;
+    height: 30dvh;
 }
 
-.div1 img{
-    width: 100px;
-    height: 100px;
+.ideation_content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 5dvh 0;
+}
+
+.idea_content_left, .idea_content_right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.idea_content_left img, .idea_content_right img{
+    width: 44dvw;
+    height: 50dvh;
+    border: 2px dotted black;
+    border-radius: 10px;
+}
+
+
+/* .objectives_content_left h1, .objectives_content_right h1 {
+    text-align: center;
+    text-transform: capitalize;
+} */
+
+/* #ideation .objectives_content_left,#ideation .objectives_content_right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+} */
+
+.obj_img_card {
+    width: 100%;
 }
 
 /*Documentation Section*/
