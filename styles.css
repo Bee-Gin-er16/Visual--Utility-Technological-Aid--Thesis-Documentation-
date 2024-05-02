@@ -225,16 +225,19 @@ nav ul li:hover{
     border-radius: 20px;
 }
 
-
 .documentation_section .subtitle{
     margin-top: 0;
+}
+
+.response {
+    margin: 10dvh 0 5dvh 0;
 }
 
 .doc_gallery, .doc_respondents{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1%;
+    margin: 5dvh 0;
 }
 
 .doc_img_card {
@@ -252,6 +255,12 @@ nav ul li:hover{
 .doc_respondents .doc_img_card{
     width: 25%;
     margin: 0 20px;
+}
+
+.doc_respondents p{
+    margin: 5dvh 15% 0 15%;
+    font-size: 2.2vw;
+    text-align: left;
 }
 
 .testimony_section, .researchers_section{
