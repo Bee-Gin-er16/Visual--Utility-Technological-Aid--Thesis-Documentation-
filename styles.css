@@ -347,12 +347,25 @@ nav ul li:hover{
 }
 
 .img_description {
-    /* padding: 0 0 0 0; */
+    margin: 2dvh 0 0 0;
+    display: flex;
+    /* width: inherit; */
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-transform: capitalize;
+    /* color: blanchedalmond;
+    text-shadow: 2px 2px rgb(132, 106, 62); */
+    color: rgb(7, 7, 5);
+    /* text-shadow: 1px 4px blanchedalmond; */
 }
 
-.rs_name {
-    text-transform: uppercase;
+:where(.img_description) h5{
+    padding-right: .5dvw;
+    text-transform: capitalize;
 }
+
+/* .rs_name {
+    text-transform: uppercase;
+} */
 
