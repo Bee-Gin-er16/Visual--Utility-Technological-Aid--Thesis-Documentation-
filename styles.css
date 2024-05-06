@@ -201,7 +201,7 @@ nav ul li:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 5dvh 0;
+    padding: 10dvh 0;
 }
 
 .build_left {
