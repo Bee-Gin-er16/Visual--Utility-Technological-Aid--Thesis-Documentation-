@@ -320,11 +320,12 @@ nav ul li:hover{
 /*Researchers Section */
 .researchers_section {
     flex-direction: column;
-    padding: 5dvh 0;
+    padding: 10dvh 0;
 }
 
 .researchers_section .section_title{
     color: blanchedalmond;
+    margin: 5dvh 0;
 }
 
 .researcher_cards {
