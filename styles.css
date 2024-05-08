@@ -135,18 +135,15 @@ nav ul li:hover{
     margin-bottom: 5dvh;
 }
 
-.icons {
-    padding: 10dvh 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 2dvw;
-    grid-row-gap: 0px;
+.objectives_content_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icons img{
-    width: 14dvw;
-    height: 30dvh;
+.objective_img {
+    width: 100%;
+    height: 100%;
 }
 
 .ideation_content {
@@ -169,19 +166,6 @@ nav ul li:hover{
     border: 2px dotted black;
     border-radius: 10px;
 }
-
-
-/* .objectives_content_left h1, .objectives_content_right h1 {
-    text-align: center;
-    text-transform: capitalize;
-} */
-
-/* #ideation .objectives_content_left,#ideation .objectives_content_right {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 40%;
-} */
 
 .obj_img_card {
     width: 100%;
