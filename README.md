@@ -1,4 +1,7 @@
 # Visual  Utility Technological Aid (Thesis Documentation)
+Github pages(needs media queries in the future):
+https://bee-gin-er16.github.io/Visual-Utility-Technological-Aid/
+
  This is a portfolio website to showcase our thesis for recruiters looking into our previous thesis. Will only serve as display purposes and WILL NOT incude CODE USED in Thesis (Unanimous agreement of the group to keep code private). Not yet hosted or put photos. Still in HTML form after finalizing designs
 
 DEVICE FUNCTIONS:
