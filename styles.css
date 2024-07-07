@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--def_font);
+    color: rgba(117, 12, 47, 0.992);
 }
 
 nav {
@@ -38,20 +39,21 @@ nav ul li:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 10dvh 0;
-    /* background: rgb(39, 45, 46);
-    background: linear-gradient(0deg, rgb(81, 95, 96) 0%, rgba(213,219,219,1) 52%, rgb(81, 95, 96) 100%); */
-    background: rgb(81,95,96);
-    background: linear-gradient(30deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 50%, rgb(91, 221, 221) 100%);
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2% 0;
+    /* background: rgb(81,95,96);
+    background: linear-gradient(30deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 50%, rgb(91, 221, 221) 100%); */
+    background-color: rgba(241, 227, 233, 1);
+    align-items: center;
 }
 
 .hero_card {
     /* border: var(--border_check1); */
     height: fit-content;
     /* margin-top: 5dvh; */
-    max-width: 40%;
+    max-width: 80%;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .hero_card h1{
@@ -67,15 +69,15 @@ nav ul li:hover{
 .hero_card p {
     margin-top: 5%;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
     /* word-spacing: 12px; */
 }
 
 .hero_img {
     max-width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     object-fit: cover;
-    filter: drop-shadow(60px 4px 4px rgba(0,0,0,0.5)) 
+    filter: drop-shadow(30px 4px 4px rgba(103, 48, 66, 0.992)) 
     /* drop-shadow(-40px 0px 4px rgba(0,0,0,0.25)); */
     /* -webkit-filter: drop-shadow(5px 5px 5px #666666);
         filter: drop-shadow(5px 5px 5px #666666); */
@@ -83,7 +85,7 @@ nav ul li:hover{
 
 .hero_img img{
     width: 45dvw;
-    height: 700px;
+    height: 500px;
     
     /* height: 80dvh; */
 }
@@ -93,14 +95,6 @@ nav ul li:hover{
     background: radial-gradient(circle, rgb(21, 72, 109) 0%, rgba(229,231,239,0) 60%, rgba(255,255,255,0) 100%);
 }
 
-.objectives_section, .documentation_section{
-    height: fit-content;
-    width: 100%;
-    padding: 5dvh 0;
-    display: flex;
-    background: var(--bg_def);
-    background: var(--bg_def_linear);
-}
 
 .section_title {
     text-align: center;
@@ -108,10 +102,12 @@ nav ul li:hover{
 
 /*Objectives Section*/
 .objectives_section {
+    height: fit-content;
+    width: 100%;
+    padding: 5dvh 0 0;
+    display: flex;
     flex-direction: column; /*The hierarchy is title nxt_line the content*/
-    background: rgb(215, 235, 239);
-    /* background: rgb(39, 45, 46);
-    background: linear-gradient(0deg, rgb(23, 31, 32) 0%, rgba(213,219,219,1) 30%, rgb(115, 124, 125)); */
+    background-color: rgba(241, 227, 233, 1);
 }
 
 .objectives_content{
@@ -149,7 +145,10 @@ nav ul li:hover{
 .ideation_content {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 0 5dvh 0;
+    padding: 5dvh 0 ;
+    background-color: rgba(117, 12, 47, 0.992);
+    color: rgba(253,205,112,1);
+
 }
 
 .idea_content_left, .idea_content_right {
@@ -157,12 +156,13 @@ nav ul li:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .idea_content_left img, .idea_content_right img{
     width: 44dvw;
-    height: 50dvh;
+    height: 400px;
     border: 2px dotted black;
     border-radius: 10px;
 }
@@ -173,10 +173,12 @@ nav ul li:hover{
 
 /*Documentation Section*/
 .documentation_section {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    background-color: rgba(241, 227, 233, 1);
     flex-direction: column;
     flex-wrap: wrap;
-    height: fit-content;
-    /* padding: 2dvh 0; */
     text-align: center;
     padding-bottom: 5dvh;
 }
@@ -185,7 +187,9 @@ nav ul li:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10dvh 0;
+    padding: 5% 0 ;
+    background-color: rgba(117, 12, 47, 0.992);
+    color: rgba(253,205,112,1);
 }
 
 .build_left {
@@ -202,10 +206,8 @@ nav ul li:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    /* padding: 10px; */
-    /* background-color: rgba(117, 12, 47, 0.992); */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     border-radius: 20px;
 }
 
@@ -225,13 +227,17 @@ nav ul li:hover{
 }
 
 .doc_img_card {
-    height: 40dvh;
-    width: 22dvw;
+    height: 300px;
+    width: 300px;
     border-radius: 20px;
     object-fit: fill;
 }
 
-.doc_gallery .doc_img_card{
+.doc_img_card {
+    border: 2px solid ;   
+}
+
+.doc_gallery .doc_img_card {
     width: 20%;
     margin: 0 20px;
 }
